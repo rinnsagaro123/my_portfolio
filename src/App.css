@@ -87,15 +87,15 @@ nav.navbar {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 9999;
+  z-index: 1040; 
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #031E49;
 }
 nav.navbar a.navbar-brand {
-    width: 15%;
+    width: 12%;
 }
 
 nav.navbar .navbar-nav {
@@ -307,10 +307,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
+/* Main styles for the skill section */
 .skill {
   padding: 0 0 50px 0;
   position: relative;
 }
+
 .skill-bx {
   background: #151515;
   border-radius: 64px;
@@ -318,26 +320,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: -60px;
 }
+
 .skill h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
 }
+
 .skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
 }
+
 .skill-slider {
   width: 80%;
   margin: 0 auto;
   position: relative;
 }
+
 .skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
 }
+
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -346,6 +353,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/* Skills Grid */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -359,13 +367,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex-direction: column; /* Stack image and text vertically */
   align-items: center; /* Center align items */
   margin: 10px; /* Space between items */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.skill-item:hover {
+  transform: translateY(-10px); /* Moves the item up by 10px */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a lift effect */
 }
 
 .skill-item img {
   max-width: 80px; /* Adjust image size as needed */
   margin-bottom: 10px; /* Space between image and text */
+  transition: transform 0.3s ease; /* Smooth transition for image scaling */
 }
 
+.skill-item:hover img {
+  transform: scale(1.1); /* Slightly scale the image to make it pop */
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   .skill-item {
     flex: 0 0 45%; /* 2 items per row on smaller screens */
@@ -728,3 +748,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+

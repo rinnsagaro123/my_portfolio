@@ -1,0 +1,80 @@
+/* Modal overlay styling */
+.custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal container styling */
+  .custom-modal-container {
+    background-color: #2f2f2f; /* Gray background for the modal */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Modal content (text, button, etc.) */
+  .custom-modal-content {
+    color: white; /* White text color */
+    text-align: center; /* Center the content */
+  }
+  
+  .custom-modal-content h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .custom-modal-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  /* Button styling */
+  .custom-modal-content button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* Blue background for button */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .custom-modal-content button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+  }
+  
+  /* Expertise level bar (rectangle display) */
+  .custom-expertise-level-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .custom-expertise-rectangle {
+    width: 30px;
+    height: 20px;
+    margin: 0 3px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-expertise-rectangle.filled {
+    background-color: #031E49; /* Dark blue for filled rectangles */
+  }
+  
+  .custom-expertise-rectangle.empty {
+    background-color: #ddd; /* Light gray for empty rectangles */
+  }
+      

@@ -1,0 +1,32 @@
+.project-btn {
+    font-size: 1.1rem;  /* Slightly larger font size */
+    padding: 12px 24px; /* Increased padding for more clickable area */
+    border-radius: 30px; /* Rounded corners */
+    margin: 0 10px; /* Space between buttons */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .project-btn:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  }
+  
+  .project-btn.selected {
+    background: linear-gradient(to right, #031E49, #013b98); /* Gradient for the active button */
+    color: #fff; /* Change text color when selected */
+    border: none; /* Remove border when selected */
+  }
+  
+  .project-btn.selected:hover {
+    background: linear-gradient(to right, #031E49, #013b98); /* Darker gradient on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow when selected */
+  }
+  
+  .project-btn.outline-primary:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Subtle background color on hover */
+  }
+  
+  .project-btn:focus {
+    outline: none; /* Remove outline on focus */
+  }
+  
