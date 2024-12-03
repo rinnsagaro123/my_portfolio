@@ -10,6 +10,10 @@ import projImg4 from "../assets/img/op.mp4";
 import projImg5 from "../assets/img/portfolio.mp4";
 import projImg6 from "../assets/img/20482.mp4";
 import projImg7 from "../assets/img/TrackMyJob.mp4";
+import projImg8 from "../assets/img/tasteventure.mp4";
+import projImg9 from "../assets/img/fasthr.mp4";
+import projImg10 from "../assets/img/Binhi.mp4";
+import projImg11 from "../assets/img/migrade-wireframe.mp4";
 import icon1 from "../assets/img/html.svg";
 import icon2 from "../assets/img/css.svg";
 import icon3 from "../assets/img/js.svg";
@@ -18,6 +22,8 @@ import icon5 from "../assets/img/php.svg";
 import icon6 from "../assets/img/python.svg";
 import icon7 from "../assets/img/react-js.svg";
 import icon8 from "../assets/img/laravel.svg";
+import icon9 from "../assets/img/figma.svg";
+import icon10 from "../assets/img/canva.svg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 import 'animate.css';
@@ -34,7 +40,7 @@ export const Projects = () => {
     {
       title: "TrackMyJob",
       description: "TrackMyJob is a job tracking app built with Laravel and React.js, integrated with a chatbot assistant to provide users with personalized support in managing and organizing their job applications efficiently.",
-      full_description: "TrackMyJob allows users to efficiently manage and organize their job applications. The app provides features like tracking application status, setting reminders, and a chatbot assistant for personalized guidance. Built with Laravel for back-end and React.js for front-end, it helps users stay on top of their job search.",
+      full_description: "TrackMyJob is a powerful job application management tool designed to help users stay organized and on top of their job search. It features application tracking, reminders for important deadlines, and a chatbot assistant powered by RASA for personalized guidance on resumes, interviews, and follow-ups. Built with Laravel and React.js, TrackMyJob provides a seamless experience to ensure users never miss an opportunity.",
       position: "Full Stack Developer",
       videoUrl: projImg7,
       iconUrls: [icon1, icon2, icon7, icon8],
@@ -48,35 +54,11 @@ export const Projects = () => {
       iconUrls: [icon1, icon2, icon3, icon4, icon6],
     },
     {
-      title: "Pastries First",
-      description: "E-Commerce Website using HTML, CSS, JS, and PHP",
-      full_description: "Pastries First is a fully functional e-commerce website built with HTML, CSS, JavaScript, and PHP. It provides users with an easy-to-use platform to browse and purchase pastries online. The website supports product listings, shopping carts, and payment processing, delivering a smooth online shopping experience.",
-      position: "Full Stack Developer",
-      videoUrl: projImg1,
-      iconUrls: [icon1, icon2, icon3, icon5],
-    },
-    {
       title: "One Piece Cards",
       description: "Top 5 Pure CSS and HTML E-commerce Challenge StuDevPH Monthly Quest",
       full_description: "One Piece Cards is a project created for the StuDevPH Monthly Quest challenge. It showcases a CSS and HTML-based e-commerce website built entirely without JavaScript. The project emphasizes responsive design and UI/UX principles while offering an engaging shopping experience for users interested in collectible cards.",
       position: "Front End Developer",
       videoUrl: projImg4,
-      iconUrls: [icon1, icon2, icon3],
-    },
-    {
-      title: "Skinfully Yours",
-      description: "E-Commerce Website using HTML, CSS, JS, and PHP",
-      full_description: "Skinfully Yours is an e-commerce website designed for a skincare product line. Built with HTML, CSS, JavaScript, and PHP, it offers a smooth shopping experience with product catalogs, payment processing, and a user-friendly interface. The website is responsive, ensuring a great experience across all devices.",
-      position: "Full Stack Developer",
-      videoUrl: projImg2,
-      iconUrls: [icon1, icon2, icon3, icon5],
-    },
-    {
-      title: "2048",
-      description: "An interactive puzzle game built with JavaScript.",
-      full_description: "2048 is an interactive puzzle game where players slide numbered tiles to combine them into a tile with the number 2048. Built with JavaScript, this game features smooth animations, responsive controls, and a challenging, engaging gameplay experience. The project demonstrates strong problem-solving and JavaScript skills.",
-      position: "Game Developer",
-      videoUrl: projImg6,
       iconUrls: [icon1, icon2, icon3],
     },
     {
@@ -87,12 +69,68 @@ export const Projects = () => {
       videoUrl: projImg5,
       iconUrls: [icon1, icon2, icon7],
     },
+    {
+      title: "2048",
+      description: "An interactive puzzle game built with JavaScript.",
+      full_description: "2048 is an interactive puzzle game where players slide numbered tiles to combine them into a tile with the number 2048. Built with JavaScript, this game features smooth animations, responsive controls, and a challenging, engaging gameplay experience. The project demonstrates strong problem-solving and JavaScript skills.",
+      position: "Game Developer",
+      videoUrl: projImg6,
+      iconUrls: [icon1, icon2, icon3],
+    },
+    {
+      title: "Pastries First",
+      description: "E-Commerce Website using HTML, CSS, JS, and PHP",
+      full_description: "Pastries First is a fully functional e-commerce website built with HTML, CSS, JavaScript, and PHP. It provides users with an easy-to-use platform to browse and purchase pastries online. The website supports product listings, shopping carts, and payment processing, delivering a smooth online shopping experience.",
+      position: "Full Stack Developer",
+      videoUrl: projImg1,
+      iconUrls: [icon1, icon2, icon3, icon5],
+    },
+    {
+      title: "Skinfully Yours",
+      description: "E-Commerce Website using HTML, CSS, JS, and PHP",
+      full_description: "Skinfully Yours is an e-commerce website designed for a skincare product line. Built with HTML, CSS, JavaScript, and PHP, it offers a smooth shopping experience with product catalogs, payment processing, and a user-friendly interface. The website is responsive, ensuring a great experience across all devices.",
+      position: "Full Stack Developer",
+      videoUrl: projImg2,
+      iconUrls: [icon1, icon2, icon3, icon5],
+    },
     // More website projects here...
   ];
 
   const wireframeProjects = [
-    // More wireframe projects here...
+    {
+      title: "TasteVenture - Mobile Application",
+      description: "Wireframe of TasteVenture Mobile Application Using FIGMA",
+      full_description: "TasteVenture's wireframe highlights a user-friendly mobile game interface designed to engage users through interactive elements. Created using Figma, the design focuses on intuitive navigation and seamless gameplay experience.",
+      position: "Front End Developer",
+      videoUrl: projImg8,
+      iconUrls: [icon9],
+    },
+    {
+      title: "FastHR",
+      description: "Wireframe of FastHR Using FIGMA",
+      full_description: "The FastHR wireframe presents a clean and efficient layout tailored for human resource management. Designed with Figma, it emphasizes streamlined workflows and easy access to employee information.",
+      position: "Front End Developer",
+      videoUrl: projImg9,
+      iconUrls: [icon9],
+    },
+    {
+      title: "Binhi",
+      description: "Wireframe of Binhi an IOT Mobile Application",
+      full_description: "Binhi's wireframe focuses on a visually appealing and functional design for plant monitoring. Built with Figma and Canva, the design integrates IoT data visualization and intuitive controls for user interaction.",
+      position: "Front End Developer",
+      videoUrl: projImg10,
+      iconUrls: [icon9, icon10],
+    },
+    {
+      title: "MiGrade",
+      description: "Wireframe of MiGrade: A Web Based Student Record Management System Utilizing Optical Character Recognition using Django Framework",
+      full_description: "The MiGrade wireframe showcases a professional web-based interface for managing student records. Designed in Canva, it integrates OCR technology visually, ensuring ease of use and efficient data management.",
+      position: "Front End Developer",
+      videoUrl: projImg11,
+      iconUrls: [icon10],
+    },
   ];
+  
 
   const handleProjectClick = (project) => {
     setSelectedProject(project);
@@ -136,7 +174,7 @@ export const Projects = () => {
                 </Col>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
+                    <Tab.Pane eventKey="first" key={selectedCategory}>
                       <Row>
                         {projectsToShow.map((project, index) => {
                           return (

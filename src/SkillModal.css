@@ -78,3 +78,7 @@
     background-color: #ddd; /* Light gray for empty rectangles */
   }
       
+  .skill-description {
+    text-align: justify;
+  }
+  

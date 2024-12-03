@@ -1,6 +1,6 @@
 /* Import fonts from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:wght@400;600&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:wght@400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Adumu:wght@400&display=swap');
 /* Custom modal styling */
 .custom-project-modal .modal-content {
   background-color: #151515; /* Set background color to #151515 */
@@ -20,7 +20,7 @@
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: 'Lora', serif; /* Apply a serif font for elegance */
+  font-family: 'Adumu', serif; /* Apply a serif font for elegance */
 }
 
 .modal-body {
