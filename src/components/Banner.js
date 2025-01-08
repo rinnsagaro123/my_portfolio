@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Modal, Button } from "react-bootstrap";
 import headerImg from "../assets/img/contact2.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
@@ -8,7 +8,10 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt} from 'react-icons/fa'; // Importin
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon4.svg';
+import resumePDF from '../assets/img/Angelo Lerum - CV.pdf';
+
 export const Banner = () => {
+  const [showModal, setShowModal] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
@@ -50,6 +53,10 @@ export const Banner = () => {
     }
   }
 
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
+  
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -83,7 +90,31 @@ export const Banner = () => {
                         <a href="https://www.facebook.com/rinnsagaro123/"><img src={navIcon2} alt="" /></a>
                         <a href="https://github.com/rinnsagaro123"><img src={navIcon3} alt=""/></a>
                     </div>
-                  {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
+                    <button onClick={handleShow} id="resume-button" className="btn-resume">
+                      <span>Let's Connect</span> <ArrowRightCircle size={25} />
+                    </button>
+                    <Modal
+                        show={showModal}
+                        onHide={handleClose}
+                        centered
+                        className="custom-modal"
+                      >
+                        <Modal.Header closeButton>
+                          <Modal.Title>My Resume</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                          <iframe
+                            src={resumePDF} // Use imported PDF path as the source
+                            title="Resume PDF"
+                            style={{ width: '100%', height: '650px', border: 'none' }}
+                          ></iframe>
+                        </Modal.Body>
+                        <Modal.Footer>
+                          <Button variant="secondary" onClick={handleClose}>
+                            Close
+                          </Button>
+                        </Modal.Footer>
+                      </Modal>
               </div>}
             </TrackVisibility>
           </Col>
