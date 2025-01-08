@@ -14,6 +14,7 @@ import projImg8 from "../assets/img/tasteventure.mp4";
 import projImg9 from "../assets/img/fasthr.mp4";
 import projImg10 from "../assets/img/Binhi.mp4";
 import projImg11 from "../assets/img/migrade-wireframe.mp4";
+import projImg12 from "../assets/img/dabnb.mp4";
 import icon1 from "../assets/img/html.svg";
 import icon2 from "../assets/img/css.svg";
 import icon3 from "../assets/img/js.svg";
@@ -24,6 +25,8 @@ import icon7 from "../assets/img/react-js.svg";
 import icon8 from "../assets/img/laravel.svg";
 import icon9 from "../assets/img/figma.svg";
 import icon10 from "../assets/img/canva.svg";
+import icon11 from "../assets/img/wordpress.svg";
+import icon12 from "../assets/img/vue.svg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 import 'animate.css';
@@ -53,6 +56,14 @@ export const Projects = () => {
       videoUrl: projImg3,
       iconUrls: [icon1, icon2, icon3, icon4, icon6],
     },
+    {
+      title: "DaBNB",
+      description: "Freelance Project: A Static Website for an Airbnb Business in Tagaytay using WordPress",
+      full_description: "DaBNB is a static website developed to showcase an Airbnb business in Tagaytay. The project focused on creating a professional and visually appealing online platform to highlight available properties, essential details, and the unique charm of the Tagaytay location. Built using WordPress, the website features a responsive design, ensuring accessibility across devices while providing an elegant user experience.",
+      position: "WordPress Developer",
+      videoUrl: projImg12,
+      iconUrls: [icon1, icon2, icon11],
+    },    
     {
       title: "One Piece Cards",
       description: "Top 5 Pure CSS and HTML E-commerce Challenge StuDevPH Monthly Quest",

@@ -12,6 +12,8 @@ import meter10 from "../assets/img/laravel.svg";
 import meter11 from "../assets/img/canva.svg";
 import meter12 from "../assets/img/figma.svg";
 import meter13 from "../assets/img/mysql.svg";
+import meter14 from "../assets/img/wordpress.svg";
+import meter15 from "../assets/img/vue.svg";
 import colorSharp from "../assets/img/color-sharp.png";
 import SkillModal from './SkillModal';
 
@@ -35,6 +37,8 @@ export const Skills = () => {
     { img: meter12, label: 'Figma', level: 8, description: 'I have experience using Figma to design user interfaces for my web projects. I’m comfortable creating wireframes, prototypes, and collaborating with developers to ensure smooth handoffs.'  },
     { img: meter11, label: 'Canva', level: 8, description: 'I use Canva to create visually appealing graphics for my projects, such as banners, social media posts, and promotional materials. It helps me quickly design assets without the need for complex software.'  },
     { img: meter13, label: 'MySQL', level: 8, description: 'I have strong experience working with MySQL, including designing and optimizing databases, writing complex queries, and managing data for dynamic applications.' },
+    { img: meter14, label: 'WordPress', level: 8, description: 'I have experience developing WordPress websites using tools such as Kubio, WPForms, Elementor, and Simply Static. My skills include customizing themes, creating responsive designs, and implementing plugins to enhance functionality.'},
+    { img: meter15, label: 'Vue.js', level: 4, description: 'I am currently learning Vue.js and familiarizing myself with its fundamentals, including reactive data binding, components, and the Vue CLI. I am at a beginner level and eager to apply and grow my knowledge through hands-on projects.' },
   ];
   
   
