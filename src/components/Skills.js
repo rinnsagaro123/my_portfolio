@@ -14,6 +14,15 @@ import meter12 from "../assets/img/figma.svg";
 import meter13 from "../assets/img/mysql.svg";
 import meter14 from "../assets/img/wordpress.svg";
 import meter15 from "../assets/img/vue.svg";
+import meter16 from "../assets/img/ts.svg"
+import meter17 from "../assets/img/nuxtjs.svg"
+import meter18 from "../assets/img/springboot.svg"
+import meter19 from "../assets/img/trello.svg"
+import meter20 from "../assets/img/vscode.svg"
+import meter21 from "../assets/img/github.svg"
+import meter22 from "../assets/img/photoshop.svg"
+import meter23 from "../assets/img/c.svg"
+import meter24 from "../assets/img/c++.svg"
 import colorSharp from "../assets/img/color-sharp.png";
 import SkillModal from './SkillModal';
 
@@ -38,7 +47,16 @@ export const Skills = () => {
     { img: meter11, label: 'Canva', level: 8, description: 'I use Canva to create visually appealing graphics for my projects, such as banners, social media posts, and promotional materials. It helps me quickly design assets without the need for complex software.'  },
     { img: meter13, label: 'MySQL', level: 8, description: 'I have strong experience working with MySQL, including designing and optimizing databases, writing complex queries, and managing data for dynamic applications.' },
     { img: meter14, label: 'WordPress', level: 8, description: 'I have experience developing WordPress websites using tools such as Kubio, WPForms, Elementor, and Simply Static. My skills include customizing themes, creating responsive designs, and implementing plugins to enhance functionality.'},
-    { img: meter15, label: 'Vue.js', level: 4, description: 'I am currently learning Vue.js and familiarizing myself with its fundamentals, including reactive data binding, components, and the Vue CLI. I am at a beginner level and eager to apply and grow my knowledge through hands-on projects.' },
+    { img: meter15, label: 'Vue.js', level: 7, description: 'I am familiar with Vue.js fundamentals, including reactive data binding, components, and the Vue CLI. I am steadily building on my experience and applying my knowledge in hands-on projects, with growing proficiency.' },
+    { img: meter16, label: 'TypeScript', level: 6, description: 'Used in the NuxtVGP Apollo System project. Still learning more advanced concepts and striving to enhance my proficiency through practical application.' },
+    { img: meter17, label: 'Nuxt.js', level: 6, description: 'Applied in the NuxtVGP Apollo System project, currently deepening my understanding of advanced features and techniques to improve my overall competence.' },
+    { img: meter18, label: 'SpringBoot', level: 5, description: 'Used during my 4th-year term with a focus on microservices and JWT Authentication. Gained foundational knowledge, but still have a limited scope of experience.' },
+    { img: meter19, label: 'Trello', level: 10, description: 'Extensive experience using Trello for project management during my capstone project. I am highly familiar with all aspects and functionality, and I can leverage it effectively for team collaboration and task management.' },
+    { img: meter20, label: 'VS Code', level: 10, description: 'My primary IDE for all programming languages, with extensive daily usage. I am highly proficient in using its features to streamline my workflow and optimize productivity.' },
+    { img: meter21, label: 'Github', level: 10, description: 'Extensive use of GitHub for version control, repository management, and collaboration. Comfortable with all core features and best practices for code management.' },
+    { img: meter22, label: 'Photoshop', level: 7, description: 'Intermediate image editing skills. I have a strong grasp of layers, effects, and adjustments, and use Photoshop for creating project visuals, personal designs, and refining images with an eye for detail.' },
+    { img: meter23, label: 'C Language', level: 6, description: 'Basic knowledge from my 1st and 2nd year, including simple projects like a calculator. I am comfortable with fundamental syntax and concepts.' },
+    { img: meter24, label: 'C++', level: 6, description: 'Basic knowledge from my 1st and 2nd year, with simple projects like a calculator. Familiar with key concepts like object-oriented programming and basic algorithms.' }
   ];
   
   

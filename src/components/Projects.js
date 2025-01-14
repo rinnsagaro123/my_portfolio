@@ -15,6 +15,7 @@ import projImg9 from "../assets/img/fasthr.mp4";
 import projImg10 from "../assets/img/Binhi.mp4";
 import projImg11 from "../assets/img/migrade-wireframe.mp4";
 import projImg12 from "../assets/img/dabnb.mp4";
+import projImg13 from "../assets/img/nuxtvgp.mp4"
 import icon1 from "../assets/img/html.svg";
 import icon2 from "../assets/img/css.svg";
 import icon3 from "../assets/img/js.svg";
@@ -27,6 +28,15 @@ import icon9 from "../assets/img/figma.svg";
 import icon10 from "../assets/img/canva.svg";
 import icon11 from "../assets/img/wordpress.svg";
 import icon12 from "../assets/img/vue.svg";
+import icon13 from "../assets/img/ts.svg"
+import icon14 from "../assets/img/nuxtjs.svg"
+import icon15 from "../assets/img/springboot.svg"
+import icon16 from "../assets/img/trello.svg"
+import icon17 from "../assets/img/vscode.svg"
+import icon18 from "../assets/img/github.svg"
+import icon19 from "../assets/img/photoshop.svg"
+import icon20 from "../assets/img/c.svg"
+import icon21 from "../assets/img/c++.svg"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 import 'animate.css';
@@ -40,6 +50,14 @@ export const Projects = () => {
 
   // Projects categorized into Website and Wireframe
   const websiteProjects = [
+    {
+      title: "NuxtVGP - The Apollo System",
+      description: "A web application that presents SpaceX data using the GraphQL API, providing users with detailed information about launches and rockets.",
+      full_description: "NuxtVGP - The Apollo System is an advanced web application built with Nuxt.js, Vue.js, TypeScript, and the SpaceX GraphQL API. It dynamically displays information about SpaceX launches, including mission names, dates, rocket details, and more. The app also features efficient global state management for favoriting rockets, user-friendly navigation, and performance optimization. Developed with the latest front-end technologies, it aims to provide an engaging and seamless user experience.",
+      position: "Front End Developer",
+      videoUrl: projImg13,
+      iconUrls: [icon12, icon13, icon14],
+    },
     {
       title: "TrackMyJob",
       description: "TrackMyJob is a job tracking app built with Laravel and React.js, integrated with a chatbot assistant to provide users with personalized support in managing and organizing their job applications efficiently.",
@@ -104,7 +122,6 @@ export const Projects = () => {
       videoUrl: projImg2,
       iconUrls: [icon1, icon2, icon3, icon5],
     },
-    // More website projects here...
   ];
 
   const wireframeProjects = [
