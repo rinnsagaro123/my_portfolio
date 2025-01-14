@@ -25,13 +25,18 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+  zoom: 0.85;
 }
 
 body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-image: url('./assets/img/banner-bg4.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -112,7 +117,7 @@ nav.navbar.scrolled {
   background-color: #031E49;
 }
 nav.navbar a.navbar-brand {
-    width: 12%;
+    width: 10%;
 }
 
 nav.navbar .navbar-nav {
@@ -299,11 +304,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg3.png');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 200px 0 100px 0;
 }
 .banner .tagline {
   font-weight: 700;
@@ -316,7 +317,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 45px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -349,8 +350,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner #header-img {
+  zoom:0.9;
   animation: updown 3s linear infinite;
+  
 }
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -374,7 +378,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-bx {
-  background: #151515;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -413,48 +416,156 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/* Skills Grid */
+/* Skills Grid for Dynamic Inverted Triangle */
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+
+.skill-bx {
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.skill h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.skill p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+/* Skills Grid for Dynamic Inverted Triangle */
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the items horizontally */
-  margin-top: 20px; /* Adjust as needed */
+  display: grid;
+  grid-template-columns: repeat(9, 1fr); /* Maximum columns in the first row */
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .skill-item {
-  flex: 0 0 20%; /* 5 items per row */
-  display: flex;
-  flex-direction: column; /* Stack image and text vertically */
-  align-items: center; /* Center align items */
-  margin: 10px; /* Space between items */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
-}
-
-.skill-item:hover {
-  transform: translateY(-10px); /* Moves the item up by 10px */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a lift effect */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-item img {
-  max-width: 80px; /* Adjust image size as needed */
-  margin-bottom: 10px; /* Space between image and text */
-  transition: transform 0.3s ease; /* Smooth transition for image scaling */
+  max-width: 80px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .skill-item:hover img {
-  transform: scale(1.1); /* Slightly scale the image to make it pop */
+  transform: scale(1.1);
 }
 
+/* Inverted Triangle Layout */
+.skills-grid .skill-item:nth-child(1) { grid-column: span 1; }
+.skills-grid .skill-item:nth-child(2) { grid-column: span 1; }
+.skills-grid .skill-item:nth-child(3) { grid-column: span 1; }
+.skills-grid .skill-item:nth-child(4) { grid-column: span 1; }
+.skills-grid .skill-item:nth-child(5) { grid-column: span 1; }
+.skills-grid .skill-item:nth-child(6) { grid-column: span 1; }
+.skills-grid .skill-item:nth-child(7) { grid-column: span 1; }
+.skills-grid .skill-item:nth-child(8) { grid-column: span 1; }
+.skills-grid .skill-item:nth-child(9) { grid-column: span 1;  }
+.skills-grid .skill-item:nth-child(10) { grid-column-start: 2;  }
+.skills-grid .skill-item:nth-child(11) { grid-column-start: 3; }
+.skills-grid .skill-item:nth-child(12) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(13) { grid-column-start: 5; }
+.skills-grid .skill-item:nth-child(14) { grid-column-start: 6; }
+.skills-grid .skill-item:nth-child(15) { grid-column-start: 7; }
+.skills-grid .skill-item:nth-child(16) { grid-column-start: 8; }
+.skills-grid .skill-item:nth-child(17) { grid-column-start: 3; }
+.skills-grid .skill-item:nth-child(18) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(19) { grid-column-start: 5; }
+.skills-grid .skill-item:nth-child(20) { grid-column-start: 6; }
+.skills-grid .skill-item:nth-child(21) { grid-column-start: 7; }
+.skills-grid .skill-item:nth-child(22) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(23) { grid-column-start: 5; }
+.skills-grid .skill-item:nth-child(24) { grid-column-start: 6; }
+
+
 /* Responsive Styles */
-@media (max-width: 768px) {
-  .skill-item {
-    flex: 0 0 45%; /* 2 items per row on smaller screens */
+@media (max-width: 790px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* 4 items per row */
   }
+
+  .skill-item img {
+    max-width: 180px; /* Reduce image size for smaller screens */
+  }
+
+  .skills-grid .skill-item:nth-child(1) { grid-column-start: 3; }
+.skills-grid .skill-item:nth-child(2) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(3) { grid-column-start: 5; }
+.skills-grid .skill-item:nth-child(4) { grid-column-start: 3; }
+.skills-grid .skill-item:nth-child(5) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(6) { grid-column-start: 5; }
+.skills-grid .skill-item:nth-child(7) { grid-column-start: 3; }
+.skills-grid .skill-item:nth-child(8) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(9) { grid-column-start: 5;  }
+.skills-grid .skill-item:nth-child(10) { grid-column-start: 3;  }
+.skills-grid .skill-item:nth-child(11) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(12) { grid-column-start: 5; }
+.skills-grid .skill-item:nth-child(13) { grid-column-start: 3; }
+.skills-grid .skill-item:nth-child(14) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(15) { grid-column-start: 5; }
+.skills-grid .skill-item:nth-child(16) { grid-column-start: 3; }
+.skills-grid .skill-item:nth-child(17) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(18) { grid-column-start: 5; }
+.skills-grid .skill-item:nth-child(19) { grid-column-start: 3; }
+.skills-grid .skill-item:nth-child(20) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(21) { grid-column-start: 5; }
+.skills-grid .skill-item:nth-child(22) { grid-column-start: 3; }
+.skills-grid .skill-item:nth-child(23) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(24) { grid-column-start: 5; }
 }
 
 @media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 10px; /* Smaller gaps for mobile */
+    padding: 0 10px; /* Add padding to prevent overflow */
+  }
+
+  .skill-item img {
+    max-width: 50px; /* Further reduce image size for mobile */
+  }
+
   .skill-item {
-    flex: 0 0 100%; /* 1 item per row on mobile screens */
+    padding: 5px; /* Add some padding */
   }
 }
 
@@ -462,7 +573,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
 }
 .project h2 {
 	font-size: 45px;
@@ -731,10 +841,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-position: center center;
+  /* background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background: linear-gradient(90.21deg, #4A2FBD -5.91%, #0345fd 111.58%);
+  background: linear-gradient(90.21deg, #4A2FBD -5.91%, #0345fd 111.58%); */
   padding: 30px 0 30px 0;
   
 }

@@ -69,7 +69,7 @@ export const Banner = () => {
                 <h1>{`Hi! I'm Angelo Lerum`} </h1>
                 <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "PHP Developer", "Java Developer", "Python Developer", "Front-End Developer", "Full-stack Developer" ]'><span className="wrap">{text}</span></span></h1>
                 <p style={{ textAlign: "justify" }}>
-                    I'm a passionate developer with a love for creating dynamic and engaging web applications. With expertise in multiple programming languages, 
+                    I'm a passionate developer with a love for creating dynamic and engaging web applications.
                     I enjoy tackling complex challenges and delivering innovative solutions.  I'm constantly seeking opportunities to grow my skills and collaborate 
                     with like-minded professionals. Let's build something amazing together!
                 </p>
@@ -104,7 +104,7 @@ export const Banner = () => {
                         </Modal.Header>
                         <Modal.Body>
                           <iframe
-                            src={resumePDF} // Use imported PDF path as the source
+                            src={resumePDF} 
                             title="Resume PDF"
                             style={{ width: '100%', height: '650px', border: 'none' }}
                           ></iframe>
@@ -118,7 +118,7 @@ export const Banner = () => {
               </div>}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={5} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>

@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Adumu:wght@400&display=swap');
 /* Custom modal styling */
 .custom-project-modal .modal-content {
-  background-color: #151515; /* Set background color to #151515 */
+  background-color: #1F2D45; /* Set background color to #151515 */
   border-radius: 10px;
-  color: #fff;
+  color: gray;
   padding: 20px;
   font-family: 'Poppins', sans-serif; /* Apply the new font family */
 }
@@ -87,8 +87,7 @@
 }
 
 /* Adjusting modal footer */
-.modal-footer {
-  background-color: #151515; /* Set footer background color to match modal */
+.modal-footer { /* Set footer background color to match modal */
   border-top: none;
   display: flex;
   justify-content: flex-end;

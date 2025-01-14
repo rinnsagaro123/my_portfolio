@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import meter1 from "../assets/img/html.png";
 import meter2 from "../assets/img/css.png";
 import meter3 from "../assets/img/js.png";
@@ -60,17 +60,41 @@ export const Skills = () => {
   ];
   
   
-
   const openModal = (skill, level, description) => {
     setSelectedSkill(skill);
     setSkillLevel(level);  // Level should be used to show the expertise bar
     setSkillDescription(description); // Description should be displayed in the modal
     setIsModalOpen(true);
   };
-  
+
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  useEffect(() => {
+    const skillItems = document.querySelectorAll('.skill-item');
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible'); // Add 'visible' class to trigger the animation
+          observer.unobserve(entry.target); // Stop observing once the skill has appeared
+        }
+      });
+    }, {
+      threshold: 0.5, // The threshold of visibility, adjust as needed
+    });
+
+    skillItems.forEach(item => {
+      observer.observe(item);
+    });
+
+    return () => {
+      skillItems.forEach(item => {
+        observer.unobserve(item);
+      });
+    };
+  }, []);
 
   return (
     <section className="skill" id="skills">
