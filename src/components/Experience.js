@@ -21,7 +21,7 @@ export const Experience = () => {
           <div className="col-12">
 
             <div className="skill-bx wow zoomIn">
-              <h2>Experiences</h2>
+              <h2>Professional Experience</h2>
 
               <div className="experience-wrapper">
                 {experiences.map((exp, index) => (
