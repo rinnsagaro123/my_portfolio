@@ -106,7 +106,11 @@ export const Banner = () => {
                           <iframe
                             src={resumePDF} 
                             title="Resume PDF"
-                            style={{ width: '100%', height: '650px', border: 'none' }}
+                            style={{ 
+                              width: '100%', 
+                              height: 'calc(100vh - 200px)',
+                              border: 'none' 
+                            }}
                           ></iframe>
                         </Modal.Body>
                         <Modal.Footer>
