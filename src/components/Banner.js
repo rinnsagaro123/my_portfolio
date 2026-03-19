@@ -17,7 +17,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "PHP Developer", "React JS Developer", "Python Developer", "Laravel Developer", "Full-stack Developer", "Java Developer" ];
+  const toRotate = [ "Web Developer", "Mobile Developer" ];
   const period = 500;
 
   useEffect(() => {
@@ -69,9 +69,10 @@ export const Banner = () => {
                 <h1>{`Hi! I'm Angelo Lerum`} </h1>
                 <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "PHP Developer", "Java Developer", "Python Developer", "Front-End Developer", "Full-stack Developer" ]'><span className="wrap">{text}</span></span></h1>
                 <p style={{ textAlign: "justify" }}>
-                    I'm a passionate developer with a love for creating dynamic and engaging web applications.
-                    I enjoy tackling complex challenges and delivering innovative solutions.  I'm constantly seeking opportunities to grow my skills and collaborate 
-                    with like-minded professionals. Let's build something amazing together!
+                I'm a developer with 1 year of experience creating interactive and practical applications. 
+                I've worked on a variety of projects that pushed me to solve problems, learn new technologies, 
+                and come up with smart solutions. I’m always looking for opportunities to apply my skills and 
+                work with a team to create projects that really make a difference.
                 </p>
                 <div className="contact-item">
                       <FaEnvelope /> 
