@@ -920,5 +920,59 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 #skills {
-  scroll-margin-top: 155px; /* Adjust this value to match your Navbar's height */
+  scroll-margin-top: 155px; 
+}
+
+.experience-wrapper {
+  margin-top: 30px;
+}
+
+
+.experience-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  padding: 50px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+
+.experience-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(5px);
+}
+
+
+.experience-date {
+  width: 35%;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+.experience-details {
+  width: 65%;
+}
+
+.experience-details h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.experience-details p {
+  margin: 0;
+  color: #ccc;
+  font-size: 14px;
+}
+
+
+.experience h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+#experience {
+  scroll-margin-top: 155px; 
 }

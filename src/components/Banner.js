@@ -87,7 +87,7 @@ export const Banner = () => {
                     </div>
                     <div className="social-icon">
                         <a href="https://www.linkedin.com/in/lerum-angelo/"><img src={navIcon1} alt="" /></a>
-                        <a href="https://www.facebook.com/rinnsagaro123/"><img src={navIcon2} alt="" /></a>
+                        <a href="https://www.facebook.com/lerumangelo0629/"><img src={navIcon2} alt="" /></a>
                         <a href="https://github.com/rinnsagaro123"><img src={navIcon3} alt=""/></a>
                     </div>
                     <button onClick={handleShow} id="resume-button" className="btn-resume">
