@@ -8,7 +8,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt} from 'react-icons/fa'; // Importin
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon4.svg';
-import resumePDF from '../assets/img/Angelo Lerum - CV.pdf';
+import resumePDF from '../assets/img/Angelo Lerum - CV 2.pdf';
 
 export const Banner = () => {
   const [showModal, setShowModal] = useState(false);
