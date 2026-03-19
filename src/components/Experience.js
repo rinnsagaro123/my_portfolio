@@ -31,7 +31,7 @@ export const Experience = () => {
                     </div>
 
                     <div className="experience-details">
-                      <h5>{exp.title}</h5>
+                      <h4>{exp.title}</h4>
                       <p>{exp.company}</p>
                     </div>
 

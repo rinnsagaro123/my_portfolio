@@ -23,6 +23,9 @@ import meter21 from "../assets/img/nav-icon4.svg"
 import meter22 from "../assets/img/photoshop.svg"
 import meter23 from "../assets/img/c.svg"
 import meter24 from "../assets/img/c++.svg"
+import meter25 from "../assets/img/flutter.svg";
+import meter26 from "../assets/img/xml.svg";
+import meter27 from "../assets/img/android.svg";
 import colorSharp from "../assets/img/color-sharp.png";
 import SkillModal from './SkillModal';
 
@@ -53,17 +56,20 @@ export const Skills = () => {
     { img: meter18, label: 'SpringBoot', level: 5, description: 'Used during my 4th-year term with a focus on microservices and JWT Authentication. Gained foundational knowledge, but still have a limited scope of experience.' },
     { img: meter19, label: 'Trello', level: 10, description: 'Extensive experience using Trello for project management during my capstone project. I am highly familiar with all aspects and functionality, and I can leverage it effectively for team collaboration and task management.' },
     { img: meter20, label: 'VS Code', level: 10, description: 'My primary IDE for all programming languages, with extensive daily usage. I am highly proficient in using its features to streamline my workflow and optimize productivity.' },
-    { img: meter21, label: 'Github', level: 10, description: 'Extensive use of GitHub for version control, repository management, and collaboration. Comfortable with all core features and best practices for code management.' },
     { img: meter22, label: 'Photoshop', level: 7, description: 'Intermediate image editing skills. I have a strong grasp of layers, effects, and adjustments, and use Photoshop for creating project visuals, personal designs, and refining images with an eye for detail.' },
     { img: meter23, label: 'C Language', level: 6, description: 'Basic knowledge from my 1st and 2nd year, including simple projects like a calculator. I am comfortable with fundamental syntax and concepts.' },
-    { img: meter24, label: 'C++', level: 6, description: 'Basic knowledge from my 1st and 2nd year, with simple projects like a calculator. Familiar with key concepts like object-oriented programming and basic algorithms.' }
+    { img: meter24, label: 'C++', level: 6, description: 'Basic knowledge from my 1st and 2nd year, with simple projects like a calculator. Familiar with key concepts like object-oriented programming and basic algorithms.' },
+    { img: meter21, label: 'Github', level: 10, description: 'Extensive use of GitHub for version control, repository management, and collaboration. Comfortable with all core features and best practices for code management.' },   
+    { img: meter25, label: 'Flutter', level: 5,  description: 'Worked on a single training project using Flutter. Familiar with widgets, basic state management, and UI design.' },
+    { img: meter26, label: 'XML', level: 8, description: 'Used XML extensively for Android UI layouts in major projects. Proficient in designing interfaces and connecting them with Kotlin/Java code.' },
+    { img: meter27, label: 'Kotlin/Java Android', level: 8, description: 'Worked on maintenance of Android apps using Kotlin and Java. Experienced in modifying features, fixing bugs, and understanding the activity lifecycle and Android SDK.'  }
   ];
   
   
   const openModal = (skill, level, description) => {
     setSelectedSkill(skill);
-    setSkillLevel(level);  // Level should be used to show the expertise bar
-    setSkillDescription(description); // Description should be displayed in the modal
+    setSkillLevel(level);  
+    setSkillDescription(description); 
     setIsModalOpen(true);
   };
 
@@ -111,7 +117,7 @@ export const Skills = () => {
                     onClick={() => openModal(skill.label, skill.level, skill.description)}
                   >
                     <img src={skill.img} alt={skill.label} />
-                    <h5>{skill.label}</h5>
+                    <h6>{skill.label}</h6>
                   </div>
                 ))}
               </div>
