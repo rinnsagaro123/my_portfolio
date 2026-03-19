@@ -554,6 +554,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skills-grid .skill-item:nth-child(22) { grid-column-start: 3; }
 .skills-grid .skill-item:nth-child(23) { grid-column-start: 4; }
 .skills-grid .skill-item:nth-child(24) { grid-column-start: 5; }
+.skills-grid .skill-item:nth-child(25) { grid-column-start: 3; }
+.skills-grid .skill-item:nth-child(26) { grid-column-start: 4; }
+.skills-grid .skill-item:nth-child(27) { grid-column-start: 5; }
 }
 
 @media (max-width: 480px) {
